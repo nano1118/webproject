@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanwha Eagles</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <button class="button button1" id="todayButton">TODAY</button>
+      <button class="button button2" id="myButton">MY</button>
+      <button class="button button3" id="teamButton">TEAM</button>
+      <button class="button button4" id="kboButton">KBO</button>
+      <div class="shape">
+        <img
+          src="\public\src\img\icon_search.png"
+          alt="Search Icon"
+          class="left-image"
+        />
+        <form
+          action="/search"
+          method="GET"
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <input type="text" name="query" class="search-input" />
+        </form>
+      </div>
+      <div class="scroll-container" id="scrollContainer">
+        <div class="scroll-progress">
+          <div class="scroll-content">
+            <p>기아 타이거즈</p>
+            <p>삼성 라이온즈</p>
+            <p>LG 트윈스</p>
+            <p>두산 베어스</p>
+            <p>Kt 위즈</p>
+            <p>SSG 랜더스</p>
+            <p>롯데 자이언츠</p>
+            <p>한화 이글스</p>
+            <p>엔씨 다이노스</p>
+            <p>키움 히어로즈</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="centered-box">
+      <div class="position-selector">
+        <button id="pitcherButton">투수</button>
+        <button id="catcherButton">포수</button>
+        <button id="infielderButton">내야수</button>
+        <button id="outfielderButton">외야수</button>
+      </div>
+      <button id="selectedPlayers" class="selected-players">선수 선택</button>
+      <div id="selectedList" class="selected-list"></div>
+      <div id="photoContainer" class="photo-container"></div>
+      <div id="selectedPhotosContainer" class="selected-photos-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

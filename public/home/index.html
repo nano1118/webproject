@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanwha Eagles</title>
+    <link rel="stylesheet" href="/home/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <button class="button button1" id="todayButton">TODAY</button>
+      <button class="button button2" id="myButton">MY</button>
+      <button class="button button3" id="teamButton">TEAM</button>
+      <button class="button button4" id="kboButton">KBO</button>
+      <div class="shape">
+        <img
+          src="/public/src/img/icon_search.png"
+          alt="Search Icon"
+          class="left-image"
+        />
+        <form
+          action="/search"
+          method="GET"
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <input type="text" name="query" class="search-input" />
+        </form>
+      </div>
+
+      <div class="scroll-container" id="scrollContainer">
+        <div class="scroll-progress">
+          <div class="scroll-content">
+            <button class="team-button">기아 타이거즈</button>
+            <button class="team-button">삼성 라이온즈</button>
+            <button class="team-button">LG 트윈스</button>
+            <button class="team-button">두산 베어스</button>
+            <button class="team-button">KT 위즈</button>
+            <button class="team-button">SSG 랜더스</button>
+            <button class="team-button">롯데 자이언츠</button>
+            <button class="team-button">한화 이글스</button>
+            <button class="team-button">NC 다이노스</button>
+            <button class="team-button">키움 히어로즈</button>
+          </div>
+        </div>
+      </div>
+      <!-- 진행 바 추가 -->
+      <div class="shape"></div>
+      <!-- 도형 -->
+    </div>
+    <div class="image-container">
+      <img src="\public\src\img\e2.png" alt="이글스 로고" />
+    </div>
+    <script src="/home/script.js"></script>
+  </body>
+</html>

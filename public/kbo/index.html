@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanwha Eagles</title>
+    <link rel="stylesheet" href="/kbo/style.css" />
+</head>
+    <div class="header">
+        <button class="button button1" id="todayButton">TODAY</button>
+        <button class="button button2" id="myButton">MY</button>
+        <button class="button button3" id="teamButton">TEAM</button>
+        <button class="button button4" id="kboButton">KBO</button>
+        <div class="shape">
+            <img src="\public\src\img\icon_search.png" alt="Your Image" class="left-image" /> <!-- shape 안에 이미지 추가 -->
+            <form action="/search" method="GET">
+                <input
+                  type="text"
+                  name="query"
+                  class="search-input"
+                />
+              </form>
+        </div>
+        <div class="scroll-container" id="scrollContainer">
+            <div class="scroll-progress">
+                <div class="scroll-content">
+                    <p>기아 타이거즈</p>
+                    <p>삼성 라이온즈</p>
+                    <p>LG 트윈스</p>
+                    <p>두산 베어스</p>
+                    <p>Kt 위즈</p>
+                    <p>SSG 랜더스</p>
+                    <p>롯데 자이언츠</p>
+                    <p>한화 이글스</p>
+                    <p>엔씨 다이노스</p>
+                    <p>키움 히어로즈</p>
+                </div>
+            </div>
+        </div> <!-- 진행 바 추가 -->
+        <div class="shape"></div> <!-- 도형 -->
+    </div>
+    <div class="centered-box"></div>
+    </div>
+    <div class="shape"></div>
+    <script src="script.js"></script>
+</body>
+</html>
